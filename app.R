@@ -8,9 +8,6 @@ library(lubridate)
 library(DT)
 library(plotly)
 
-# -----------------------------
-# Step 1: Load & Prepare Data
-# -----------------------------
 df <- read_csv("online_retail_clean.csv") %>%
   mutate(revenue = quantity * price)
 
@@ -37,9 +34,7 @@ rfm$Cluster <- as.factor(km$cluster)
 cluster_labels <- c("1"="Loyal / Potential","2"="Champions","3"="At Risk")
 rfm$Segment <- cluster_labels[as.character(rfm$Cluster)]
 
-# -----------------------------
-# Step 2: UI
-# -----------------------------
+
 ui <- dashboardPage(
   dashboardHeader(title = "Customer Segmentation Dashboard"),
   
@@ -76,9 +71,6 @@ ui <- dashboardPage(
   )
 )
 
-# -----------------------------
-# Step 3: Server
-# -----------------------------
 server <- function(input, output) {
   
   # Reactive filtered RFM
