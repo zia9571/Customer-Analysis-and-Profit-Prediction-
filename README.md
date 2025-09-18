@@ -6,7 +6,6 @@
 
 **Author:** Zahra Shaikh  
 **Live App:** [Shiny Dashboard Link](https://d1pqse-thya-shaikh.shinyapps.io/CustomerSegmentationApp/)  
-**Portfolio:** [Your Portfolio Link]  
 
 ---
 
@@ -43,11 +42,13 @@ Goal: Predict customer revenue/profit
 Models used: Linear Regression, Random Forest, Lasso, XGBoost
 Evaluation metric: RMSE
 
-Model	RMSE
-Linear Regression	9321.89
-Random Forest	10688
-Lasso	9302.50
-XGBoost (tuned)	10608.45
+| Model             | RMSE       |
+|------------------|-----------|
+| Linear Regression | 9321.89   |
+| Random Forest     | 10688     |
+| Lasso             | 9302.50   |
+| XGBoost (tuned)   | 10608.45  |
+
 
 Insight: Lasso & Linear Regression performed best for predicting customer revenue.
 
@@ -63,60 +64,14 @@ Features:
 - Customer profile dashboards: View individual metrics and purchase history
 - Dropdown menus to filter by segment, country, or customer
 
-6. Key Insights
-High-value customers generate most revenue → focus marketing campaigns here
+# 6. Key Insights
+- High-value customers generate most revenue → focus marketing campaigns here
+- At-risk customers → provide incentives or offers to retain
+- Predictive modeling enables revenue forecasting per customer
 
-At-risk customers → provide incentives or offers to retain
-
-Predictive modeling enables revenue forecasting per customer
-
-7. How to Run Locally
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/yourusername/Customer-Analytics-Portfolio.git
-Set working directory in RStudio to the project folder.
-
-Install required packages:
-
-r
-Copy code
-install.packages(c("shiny","shinydashboard","tidyverse","lubridate","plotly","DT"))
-Run the app:
-
-r
-Copy code
-library(shiny)
-runApp("app.R")
-Ensure online_retail_clean.csv is in the same folder as app.R.
-
-8. Folder Structure
-kotlin
-Copy code
-Customer-Analytics-Portfolio/
-│
-├─ data/
-│   └─ online_retail_clean.csv
-├─ scripts/
-│   ├─ 01_data_cleaning.R
-│   ├─ 02_exploratory_analysis.R
-│   ├─ 03_predictive_modeling.R
-│   └─ 04_rfm_clustering.R
-├─ app.R
-├─ README.md
-└─ screenshots/
-9. Screenshots / Demo
-
-
-Include 2–3 screenshots or GIFs to showcase the interactive dashboard and plots.
-
-10. Technologies Used
-R & tidyverse → Data cleaning & analysis
-
-ggplot2 & Plotly → Visualizations
-
-Shiny & shinydashboard → Interactive dashboard
-
-K-Means, Linear Regression, Random Forest, Lasso, XGBoost → Analytics & predictions
+# 7. Technologies Used
+- R & tidyverse → Data cleaning & analysis
+- ggplot2 & Plotly → Visualizations
+- Shiny & shinydashboard → Interactive dashboard
+- K-Means, Linear Regression, Random Forest, Lasso, XGBoost → Analytics & predictions
 
