@@ -38,9 +38,9 @@ It combines **data cleaning, exploratory analysis, predictive modeling, customer
 - Visualizations using ggplot2 and Plotly
 
 # 3. Predictive Modeling
-Goal: Predict customer revenue/profit
-Models used: Linear Regression, Random Forest, Lasso, XGBoost
-Evaluation metric: RMSE
+- Goal: Predict customer revenue/profit
+- Models used: Linear Regression, Random Forest, Lasso, XGBoost
+- Evaluation metric: RMSE
 
 | Model             | RMSE       |
 |------------------|-----------|
